@@ -100,11 +100,3 @@ Dense(1, sigmoid)
 ## Kaggle Notebook
 [View full notebook on Kaggle](https://www.kaggle.com/code/manarhamdy/imdb-sentiment-analysis-lstm-vs-gru)
 
----
-
-## References
-- Maas et al. (2011) — Learning Word Vectors for Sentiment Analysis
-- Hochreiter & Schmidhuber (1997) — Long Short-Term Memory
-- Cho et al. (2014) — Learning Phrase Representations using RNN Encoder-Decoder
-- Vaswani et al. (2017) — Attention Is All You Need
-- Chollet (2021) — Deep Learning with Python
