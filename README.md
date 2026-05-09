@@ -18,13 +18,13 @@ from preprocessing to an interactive Gradio demo.
 
 | Metric | LSTM | GRU | Winner |
 |--------|------|-----|--------|
-| Test Accuracy | 86.51% | 86.95% | GRU ✓ |
-| Precision | 85.49% | 85.29% | LSTM ✓ |
-| Recall | 87.94% | 89.30% | GRU ✓ |
-| F1 Score | 86.70% | 87.25% | GRU ✓ |
-| Training Time | 1.9m | 2.2m | LSTM ✓ |
+| Test Accuracy | 86.12% | 87.05% | GRU ✓ |
+| Precision | 86.71% | 86.43% | LSTM ✓ |
+| Recall | 85.32% | 87.90% | GRU ✓ |
+| F1 Score | 86.01% | 87.16% | GRU ✓ |
+| Training Time | 2.0m | 1.9m | GRU ✓ |
 
-**Selected Model: GRU — wins 3 out of 5 metrics**
+**Selected Model: GRU — wins 4 out of 5 metrics**
 
 ---
 
@@ -70,19 +70,19 @@ Dense(1, sigmoid)
 - Python 3.12
 - TensorFlow / Keras
 - Pandas, NumPy
-- Plotly (interactive visualizations)
+- Matplotlib / Seaborn (visualizations)
 - Gradio (interactive demo)
 - Scikit-learn (evaluation metrics)
 
 ---
 
 ## Key Findings
-1. Both models achieve ~87% accuracy on unseen data
-2. GRU converges faster and generalizes slightly better
+1. GRU outperforms LSTM on 4 out of 5 metrics
+2. Both models achieve ~87% accuracy on unseen data
 3. Main failure cases: sarcasm, irony, mixed sentiment
 4. Very short reviews under 20 words are unreliable
-5. Model is sometimes more confident when wrong (0.563)
-   than when correct (0.514)
+5. Model is sometimes more confident when wrong (0.534)
+   than when correct (0.506)
 
 ---
 
@@ -100,3 +100,11 @@ Dense(1, sigmoid)
 ## Kaggle Notebook
 [View full notebook on Kaggle](https://www.kaggle.com/code/manarhamdy/imdb-sentiment-analysis-lstm-vs-gru)
 
+---
+
+## References
+- Maas et al. (2011) — Learning Word Vectors for Sentiment Analysis
+- Hochreiter & Schmidhuber (1997) — Long Short-Term Memory
+- Cho et al. (2014) — Learning Phrase Representations using RNN Encoder-Decoder
+- Vaswani et al. (2017) — Attention Is All You Need
+- Chollet (2021) — Deep Learning with Python
